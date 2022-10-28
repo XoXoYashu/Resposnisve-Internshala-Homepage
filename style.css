@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: turquoise;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:hover >ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.container {
+    max-width: 500px;
+    background-color: red;
+    margin: auto;
+}
+
+.design {
+    list-style: none;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 60px;
+    position: fixed
+ }
+
+ .footer-col{
+    width: 25%;
+    padding: 0 15px;
+ }
+
+ .footer-col h4{
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+ }
+ 
+ .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+ }
+
+ .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 200;
+    display: block;
+    transition: all 0.3s ease;
+ }
+
+ .footer-col ul li a:hover{
+    cursor: pointer;
+    padding-left: 10px;
+ }
+
+ .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+ }
+
+ .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+ }
+
+@media (max-width:990px){
+    header{
+        padding: 20px;
+    }
+    header label {
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li{
+        background: #eee;
+    }
+
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+    .footer-col{
+        width: 50%;
+        padding: 30px;
+    }
+    .footer{
+        max-height: 50%;
+        position: relative
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
